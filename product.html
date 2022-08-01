@@ -92,36 +92,68 @@
       margin-top: 2px;
       margin-left: -1px;
     }
-    #container{
+    #container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      row-gap: 30px;
+      padding: 20px;
+      width: 231px;
+      margin: 100px;
+      margin-top: 20px;
+    }
+    /* @media only screen and (min-width: 600px) and (max-width: 767px){
+      #container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         row-gap: 30px;
         padding: 20px;
         width: 231px;
         margin: 100px;
         margin-top: 20px;
+      }
     }
-    #container img{
-        height: 300px;
-        width: 300px;
-        margin-bottom: 10px;
+    @media only screen and (max-width: 450px) {
+      #container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        row-gap: 30px;
+        padding: 20px;
+        width: 231px;
+        margin: 100px;
+        margin-top: 20px;
+      }
+
+    } */
+    #container img {
+      height: 300px;
+      width: 300px;
+      margin-bottom: 10px;
     }
-    #container > div > h5{
-        text-transform: uppercase;
+    #container > div > h5 {
+      text-transform: uppercase;
     }
-    #container > div > p{
-        margin-top: 5px;
+    #container > div > p {
+      margin-top: 5px;
     }
-    #container > div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        margin: auto;
-        height: 400px;
-        border: 1px solid #cecece;
+    #container > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      margin: auto;
+      height: 430px;
+      border: 1px solid #cecece;
+    }
+    #container > div > button {
+      width: 100%;
+      background-color: #000;
+      border: none;
+      color: #fff;
+      height: 30px;
     }
   </style>
   <body>
@@ -154,39 +186,60 @@
     }
   };
 
-  function getRandomNumberBetween(min,max){
-    return Math.floor(Math.random()*(max-min+1)+min);
+  function getRandomNumberBetween(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
-  const displayData = (data) => {
-    data.forEach((product) => {
+  const displayData = async (data) => {
+    try {
+      data.forEach((product) => {
+        let cartArray = [];
         let container = document.getElementById("container");
+        container.innerHTML = "";
         let card = document.createElement("div");
 
         let image = document.createElement("img");
-        image.src = product.urls.small;
+        // image.src = product.urls.small;
+        image.src = product.image_link;
+        image.alt = "OUT OF STOCK AT THE MOMENT";
 
         let title = document.createElement("h5");
-        title.innerText = product.alt_description;
+        // title.innerText = product.alt_description;
+        title.innerText = product.name;
 
         let price = document.createElement("p");
-        price.textContent = "Rs." + getRandomNumberBetween(500,1500);
+        // price.textContent = "Rs." + getRandomNumberBetween(500,1500);
+        price.textContent = "Rs. " + product.price * 54;
 
         let rating = document.createElement("p");
-        rating.textContent = getRandomNumberBetween(2,4)+(getRandomNumberBetween(1,9)/10);
+        rating.textContent =
+          getRandomNumberBetween(2, 4) + getRandomNumberBetween(1, 9) / 10;
+        let cart = document.createElement("button");
+        cart.innerText = "ADD TO CART";
+        cart.addEventListener("click", function(){
+          cartArray.push(image.src, title.innerText, price.textContent, rating.textContent);
+          alert("Product has been added!");
+          localStorage.setItem("cart", cartArray);
+        })
 
-        card.append(image, title, price, rating);
+        card.append(image, title, price, rating, cart);
         container.append(card);
-    });
+      });
+    } catch (error) {
+      console.log(error);
+    }
   };
   async function init() {
     try {
+      // http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick
       const searchTerm = localStorage.getItem("search_term");
-      let url = `https://api.unsplash.com/search/photos/?client_id=${accessKey}&query=${searchTerm}&per_page=12`;
+      // let url = `https://api.unsplash.com/search/photos/?client_id=${accessKey}&query=${searchTerm}&per_page=12`;
+      let url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${searchTerm}&price_greater_than=0`;
       //   console.log(url);
       let data = await getData(url);
-      console.log(data.results);
-      displayData(data.results);
+      console.log(data);
+      // console.log(data.results);
+      await displayData(data);
     } catch (error) {
       console.log(error);
     }
