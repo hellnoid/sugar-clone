@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugar Cosmetics</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="carousel.css">
+
+
+
+  <script src="https://kit.fontawesome.com/25894adcd7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="header">
+
+  </div>
+
+
+  <!-- Flickity HTML init -->
+  <div class="carousel" style=" width: 100%; margin:0; padding:0;"
+    data-flickity='{ "fullscreen": true, "lazyLoad": 1 , "autoPlay": true , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false}'>
+    <div class="carousel-cell" style="width: 100%; margin:0; padding:0;">
+      <img class="carousel-cell-image"
+        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/d1134e8d-e941-4aae-b89c-9305d1b110f0.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/9f1816de-bffd-48d9-8821-63ce9b301159.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/be784c39-2c84-45d0-89c4-e79f72b380b0.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/4cefe497-b65b-43d7-b0e8-7476e3d5b8e0.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/0a0d2b46-e424-4f4c-baf3-da2d2fc14f88.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/32e53a7b-879e-4c34-a5bc-b95c85ee4a9e.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/7d151892-4d17-466e-8a06-743392796264.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/85bc9b9b-d8b3-4fa1-a1b0-a77ca9428664.jpg" />
+    </div>
+
+
+  </div>
+
+  <div class="refer-h1">
+    <p>REFER YOUR FRIENDS</p>
+  </div>
+  <div id="refimgbox">
+    <img id="refimg" src="https://d32baadbbpueqt.cloudfront.net/Homepage/b7d9027a-a2c1-442e-a804-424d703a64d3.jpg"
+      alt="">
+  </div>
+
+  <div class="refer-h1" id="ref-h2">
+    <p>CONTOUR DE FORCE EYES & FACE PALETTE</p>
+  </div>
+
+  <div>
+    <iframe id="video" width="80%" height="500" border:none src="https://www.youtube.com/embed/1_CEXA8sfY8"></iframe>
+  </div>
+
+</body>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="module">
+  import { header } from './modules/header.js';
+  document.getElementById("header").innerHTML = header();
+</script>
+
+</html>
