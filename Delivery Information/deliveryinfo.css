@@ -1,0 +1,111 @@
+#deliinfomain{
+    height: auto;
+    width: 800px;
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    font-family: Quicksand;
+    color: gray;
+    background-color: white;
+    padding: 5px;
+}
+#deliinfomain_1{
+    display: flex;
+   
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 3px 10px 0px 10px;
+    align-items: center;
+}
+
+#cross{
+    margin: 0px;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;  
+}
+#deliinfomain_1_1{
+    margin: 0px;
+display: flex;
+gap: 5px;
+}
+#deliinfomain_2{
+    display: flex;
+    margin-left: 10px;
+    gap: 4px;
+}
+#deliinfomain_2_1{
+    margin-top: 0px;
+}
+#deliinfomain_2 input{
+    border: none;
+    border-bottom: 1px solid rgb(177, 174, 174);
+    width: 380px;
+    color: rgb(165, 164, 164);
+}
+#deliinfomain_3{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#deliinfomain_5 input{
+    border: none;
+    border-bottom: 2px solid gainsboro;
+    width: 765px;
+}
+#deliinfomain_5{
+    margin-left: 10px;
+}
+.deliinfomain_3_addressline{
+    width: 760px;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+#deliinfomain_3_1 input{
+    border: none;
+    border-bottom: 1px  solid gainsboro;
+}
+#deliinfomain_3_1 button{
+    background-color: rgb(26, 23, 23);
+    border-radius: 3px;
+    color: white;
+    padding: 3px 15px;
+
+}
+.deliinfomain_3_addressline2{
+    border: none;
+    border-bottom: 1px  solid gainsboro;   
+    width: 174px;
+}
+#deliinfomain_4{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+#deliinfomain_4 > button:first-child{
+   
+    background-color: rgb(255, 49, 111);
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+}
+#deliinfomain_4 > button:last-child{
+    color: aliceblue;
+    background-color:rgb(26, 23, 23) ;
+    border-radius: 5px;
+    border: none;
+}
+input{
+    outline: none;
+    font-size: 12px;
+    padding: 4px 0px;
+}
+input:focus{
+    font-size: 15px;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
