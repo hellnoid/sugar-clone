@@ -8,14 +8,14 @@ let header = () => {
            <input id="search-icon" type="submit" value="Search">
       </div>
    
-      <img id="user" class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/2048px-OOjs_UI_icon_userAvatar.svg.png"> 
+      <img id="user" class="icon-c" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/2048px-OOjs_UI_icon_userAvatar.svg.png"> 
      
       <a id="login-signup" href="" >Login/Register</a>
   
 <!-----   icons --->
-  <a href=""><img id="heart" class="icon" src="https://cdn0.iconfinder.com/data/icons/glyphpack/51/heart-512.png">  </a>
- <a href=""><img class="icon" src="https://cdn-icons-png.flaticon.com/512/7446/7446956.png">  </a>
- <a href=""><img  class="icon" src="https://static.thenounproject.com/png/170070-200.png"></a>
+  <a href=""><img id="heart" class="icon-c" src="https://cdn0.iconfinder.com/data/icons/glyphpack/51/heart-512.png">  </a>
+ <a href=""><img class="icon-c" src="https://cdn-icons-png.flaticon.com/512/7446/7446956.png">  </a>
+ <a href=""><img  class="icon-c" src="https://static.thenounproject.com/png/170070-200.png"></a>
                   
 </div>
 
