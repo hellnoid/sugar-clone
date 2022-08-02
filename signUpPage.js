@@ -98,4 +98,4 @@ let infopage = ()=>{
 </div>`
 }
 
-export {signUpPage,infopage}
+export {signUpPage,infopage};
