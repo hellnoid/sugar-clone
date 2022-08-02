@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    />
+    <script
+      src="https://kit.fontawesome.com/af77b70b36.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Product</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Quicksand";
+    }
+    #navbar {
+      width: 100%;
+    }
+    #offer {
+      background-color: #000;
+      color: #fff;
+      width: 100%;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 100;
+      text-align: center;
+    }
+    .fa-solid .fa-xmark {
+      text-align: left;
+    }
+    #head > img {
+      width: 182px;
+      height: 50px;
+      margin: 10px;
+      background-color: #fff;
+    }
+    #head {
+      display: flex;
+      background-color: rgb(248, 249, 250);
+      height: 100px;
+    }
+    input {
+      width: 700px;
+      height: 40px;
+      margin: 20px;
+      border-radius: 50px 0 0 50px;
+      padding-left: 10px;
+      border: none;
+    }
+    #search-btn {
+      height: 40px;
+      width: 130px;
+      margin: 20px;
+      margin-left: -20px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      border-radius: 0px 50px 50px 0px;
+    }
+    #head > a {
+      text-decoration: underline;
+      color: black;
+      margin: 30px 80px 30px 80px;
+    }
+    #functions {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    #functions > * {
+      margin: auto;
+      padding: auto;
+      height: 25px;
+      width: 25px;
+    }
+    #functions a {
+      text-decoration: none;
+      color: #000;
+    }
+    #functions img {
+      height: 18px;
+      width: 18px;
+      margin-top: 2px;
+      margin-left: -1px;
+    }
+    #container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      row-gap: 30px;
+      padding: 20px;
+      width: 231px;
+      margin: 100px;
+      margin-top: 20px;
+    }
+    /* @media only screen and (min-width: 600px) and (max-width: 767px){
+      #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        row-gap: 30px;
+        padding: 20px;
+        width: 231px;
+        margin: 100px;
+        margin-top: 20px;
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      #container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        row-gap: 30px;
+        padding: 20px;
+        width: 231px;
+        margin: 100px;
+        margin-top: 20px;
+      }
+
+    } */
+    #container img {
+      height: 300px;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+    #container > div > h5 {
+      text-transform: uppercase;
+    }
+    #container > div > p {
+      margin-top: 5px;
+    }
+    #container > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      margin: auto;
+      height: 430px;
+      border: 1px solid #cecece;
+    }
+    #container > div > button {
+      width: 100%;
+      background-color: #000;
+      border: none;
+      color: #fff;
+      height: 30px;
+    }
+  </style>
+  <body>
+    <div id="navbar_div"></div>
+    <div id="container"></div>
+  </body>
+</html>
+<script type="module">
+  import navbar from "./header.js";
+  let navbar_div = document.getElementById("navbar_div");
+  navbar_div.innerHTML = navbar();
+
+  let searchBar = document.getElementById("searchParam");
+  document.getElementById("search-btn").addEventListener("click", async () => {
+    let searchParam = searchBar.value;
+    localStorage.setItem("search_term", searchParam);
+
+    location.href = "product.html";
+  });
+
+  let accessKey = "ke-lFAlTeBp2QdBpuXrRnXyzLUgG0WYPQCJL4n2NC7k";
+
+  const getData = async (url) => {
+    try {
+      let res = await fetch(url);
+      let data = await res.json();
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  function getRandomNumberBetween(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  const displayData = async (data) => {
+    try {
+      data.forEach((product) => {
+        let cartArray = [];
+        let container = document.getElementById("container");
+        container.innerHTML = "";
+        let card = document.createElement("div");
+
+        let image = document.createElement("img");
+        // image.src = product.urls.small;
+        image.src = product.image_link;
+        image.alt = "OUT OF STOCK AT THE MOMENT";
+
+        let title = document.createElement("h5");
+        // title.innerText = product.alt_description;
+        title.innerText = product.name;
+
+        let price = document.createElement("p");
+        // price.textContent = "Rs." + getRandomNumberBetween(500,1500);
+        price.textContent = "Rs. " + product.price * 54;
+
+        let rating = document.createElement("p");
+        rating.textContent =
+          getRandomNumberBetween(2, 4) + getRandomNumberBetween(1, 9) / 10;
+        let cart = document.createElement("button");
+        cart.innerText = "ADD TO CART";
+        cart.addEventListener("click", function(){
+          cartArray.push(image.src, title.innerText, price.textContent, rating.textContent);
+          alert("Product has been added!");
+          localStorage.setItem("cart", cartArray);
+        })
+
+        card.append(image, title, price, rating, cart);
+        container.append(card);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  async function init() {
+    try {
+      // http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick
+      const searchTerm = localStorage.getItem("search_term");
+      // let url = `https://api.unsplash.com/search/photos/?client_id=${accessKey}&query=${searchTerm}&per_page=12`;
+      let url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${searchTerm}&price_greater_than=0`;
+      //   console.log(url);
+      let data = await getData(url);
+      console.log(data);
+      // console.log(data.results);
+      await displayData(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  init();
+</script>
