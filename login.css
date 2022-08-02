@@ -5,6 +5,7 @@
 
 #navlogin{
 cursor: pointer;
+
 }
 
 #signappend{
@@ -14,22 +15,21 @@ cursor: pointer;
   margin-top: -25px;
   animation: right 2s;
   z-index: 1;
+  right: 745px;
 }
 
 @keyframes right{
   from{
-  transform: translateX(650px);
+  transform: translateX(700px);
   }
   to{
-    transform: translateX(50);
+    transform: translateX(0px);
   }
   }
   
   #navlogin{
     display: flex;
     align-items: center;
-    
   }
 
-  
   
