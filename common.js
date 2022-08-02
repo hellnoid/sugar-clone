@@ -14,6 +14,7 @@ navlogin.addEventListener("click",()=>{
     let login = document.getElementById("signappend");
     login.style.display = "block";
     login.style.overflowY;
+   
     
  })
 
@@ -21,8 +22,11 @@ navlogin.addEventListener("click",()=>{
 close.addEventListener("click",()=>{
     let login = document.getElementById("signappend");
     login.style.transform="translateX(710px)";   
-    login.style.transition="1s";  
-})
+    login.style.transition="1s"; 
+        setTimeout(function () {
+          location.reload();
+        }, 1000);
+});
 
 $(".enterotp").keyup(function () {
     if (this.value.length == this.maxLength) {
@@ -39,7 +43,7 @@ let reqotp = document.getElementById("requestptp");
 
 reqotp.addEventListener("click",()=>{
     setTimeout(()=>{
-        alert("9876 is Your OTP to login.")
+        alert( "9876 is Your OTP to login.")  
     },2000)
 })
 
@@ -49,11 +53,11 @@ varifyotp.addEventListener("click",()=>{
     let otp1 = document.querySelector(".enterotp1").value;
     let otp2 = document.querySelector(".enterotp2").value;
     let otp3 = document.querySelector(".enterotp3").value;
-    let otp4 = document.querySelector(".enterotp4").value;
+    let otp4 = document.querySelector(".enterotp4").value;     
     let otp = otp1+otp2+otp3+otp4;
     console.log(otp)
    let wrong =  document.getElementById("incorrect");
-   if(otp == Math.floor(Math.random()*10000) && wrong.length!==0){ 
+   if(otp != 9876 && wrong.length!==0){ 
        wrong.innerText = "Incorrect OTP! Please try again."
        wrong.style.color = "red" 
    }
