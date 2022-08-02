@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+
+    
+
+    
+   
+</head>
+<body id="body">
+
+  <!-- header -->
+  <div id="header">
+
+  </div>
+ 
+
+    
+    <div class="icon-div">
+      <p class="icon">
+        <a href="index.html" class="btn"><i class="fa fa-home"></i></a> / <span> <a href="cart.html">Cart</a></span>
+      
+      </p>
+      
+    </div>
+  
+
+    <div class="emptyCart">
+    </div>
+
+
+    
+
+
+
+
+    <div id="cart-container">
+
+        <div class="cart-left">
+
+        
+          <div class="smry-box">
+
+                  
+            <div class="smry-disp">
+
+             
+
+                <div class="smry-logo">
+                    <img src="https://in.sugarcosmetics.com/desc-images/shopping_cart.svg" width="20px" height="20px" class="" alt="Cart Logo">
+                </div>
+              
+                <div class="smry-txt"> <u>Suggesion</u> </div>
+            
+            </div>
+          
+        </div>
+<div id="suggesionParant">
+
+          <div class="suggesion">
+          <img src= "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-minis-lipstick-01-scarlett-o-hara-28219914354771_39239823-2ed8-4b8d-b0db-48c857ae0e3f.jpg?v=1642070562" alt="">
+          <p><b>Matte as Hell Crayon Mini Lipstick - 01 Scarlett O'Hara</b> <br> <span class="span">Bonus Unlocked</span></p> 
+          <button onclick="b1()"><u>+Add Item</u>(rs.999)</button>
+    
+          </div>
+
+
+          <div class="suggesion">
+            <img src= "https://cdn.shopify.com/s/files/1/0906/2558/products/SMNLL-Mini---Shade-02.jpg?v=1656000101" alt="">
+            <p><b>Smudge Me Not Liquid Mini Lipstick - 02 Brink of Pink (Plum Rose)</b> <br> <span class="span">Bonus Unlocked</span></p>
+            <button onclick="b2()"><u>+Add Item</u>(rs.999)</button>
+      
+            </div>
+
+            <div class="suggesion">
+              <img src= "https://cdn.shopify.com/s/files/1/0906/2558/products/2-illuminating-pink.jpg?v=1655964128" alt="">
+              <p><b>Bling Leader Mini Illuminating Sunscreen SPF35 PA+++ - 02 Pink</b> <br> <span class="span">Bonus Unlocked</span></p>
+              <button onclick="b3()"><u>+Add Item</u>(rs.999) </button>
+        
+              </div>
+
+              <div class="suggesion">
+                <img src= "https://cdn.shopify.com/s/files/1/0906/2558/products/1_9814781c-2d1a-4019-ba96-94b9df6f2345.jpg?v=1648102353" alt="">
+                <p><b>Stroke Of Genius Heavy-Duty Kohl - 05 Black Magic (Black With Silver</b> <br> <span class="span">Bonus Unlocked</span></p>
+                <button onclick="b4()"><u>+Add Item</u>(rs.999)</button>
+          
+                </div>
+
+              </div>
+
+            <div class="cart_order_summary">
+                <div class="smry-box">
+
+                  
+                    <div class="smry-disp">
+
+                     
+
+                        <div class="smry-logo">
+                            <img src="https://in.sugarcosmetics.com/desc-images/shopping_cart.svg" width="20px" height="20px" class="" alt="Cart Logo">
+                        </div>
+                      
+                        <div class="smry-txt">Order Summary</div>
+                      
+
+                        
+
+
+                    </div>
+                    <div class="smry-cart-total" id="total">    </div>
+                </div>
+                <div class="cart-product">
+          
+                    <div>
+                        
+                    </div>
+                    
+                    <div class="product-spec"></div>
+                </div>
+            </div>
+        </div>
+        
+    
+
+        <div class="cart-right">
+          <div class="UserInfo">
+            <div class="rt-same">
+              <img src="https://in.sugarcosmetics.com/desc-images/CustomerInformation.svg" alt="logo">
+              <p><u>Enter Delivery Information</u></p> 
+            </div>
+            <div class="fname-phno">
+            </div>
+              <div class="rt-same">
+               
+                <input type="text" placeholder="Enter Name" class="inp">
+              </div>
+              <div class="rt-same">
+              
+              <input type="number" name="" class="inp" placeholder="Phone No.">
+              </div>
+            
+            <div class="rt-same">
+           
+            <input type="email" name="" class="inp" placeholder="Enter Email Address">
+            </div>
+            <div class="rt-same">
+           
+              <input type="number" name="" class="inp" placeholder="Enter Your Zip Code">
+              </div>
+              <div class="rt-same">
+             
+                <input type="email" name="" class="inp" placeholder="Enter Your Locality">
+                </div>
+                <div class="rt-same">
+              
+                  <input type="email" name="" class="inp" placeholder="Enter Your City">
+                  </div>
+                  <div class="rt-same">
+              
+                    <input type="email" name="" class="inp" placeholder="Enter Your Country">
+                    </div>
+          </div>
+        <div id="payment">
+          <div class="rt-same">
+            <img src="https://in.sugarcosmetics.com/desc-images/Offers_price_details.svg" alt=" logo">
+            <p><u>Offers and Price Details</u> </p> 
+          </div>
+          <div class="rt-same">
+            <img src="https://in.sugarcosmetics.com/desc-images/Offers_icon.svg" alt="Offer icon">
+            <p>Apply "Add coupon code to get off"</p> 
+          </div>
+          <div class="discount-txt">
+            <div class="rt-same">
+              <img src="https://in.sugarcosmetics.com/desc-images/GiftCard.svg" alt="Offer icon">
+              <p>Discount Code:</p> 
+            
+            
+            </div>
+            <div>  <form id="form">
+                <input type="text" id="coupon" placeholder="Enter Coupon" />
+                <input type="submit" id="coupn-apply" value="Apply">
+              </form></div>
+            </div discount-aply>
+           
+            <p class="invalid-coupon"></p>
+            <p class="valid-coupon"></p>
+       
+    
+            <div class="rt-same">
+              <img src="https://in.sugarcosmetics.com/desc-images/PriceDetails.svg" alt="icon">
+              <p><u>Price Details</u></p> 
+            </div>
+
+            <div class="price-table">
+              <table id="table">
+                  <tbody>
+                      <tr>
+                          <td >Cart Sub Total</td>
+                          <td id="cart-total"></td>
+                      </tr>
+                      <tr>
+                          <td>Shipping Cost:</td>
+                          <td>0</td>
+                      </tr>
+                      <tr>
+                          <td>Discount Applied:</td>
+                          <td id="disc-applied"></td>
+                      </tr>
+                      <tr>
+                          <td >Amount Payable:</td>
+                          <td id="pay-amount"></td>
+                      </tr>
+                  </tbody>
+              </table>
+              <div id="button">
+              <div clas="back-btn">
+                <button id="back"><u> < Continue Shoping</u></button>
+            </div>
+              <div clas="checkout-btn">
+                  <button id="checkOut">Proceed To Payment</button>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+    </div>  
+
+  </div>
+
+  <div id="footermain"></div>
+  
+</body>
+</html>
+
+
+
+<script src="cart.js"></script>
+    <script src="https://kit.fontawesome.com/74404664ae.js" crossorigin="anonymous"></script>
+
+    <script type="module">
+      import {footer} from './cart.js';
+      document.querySelector("#footermain").innerHTML=footer();
+  </script>
+
+
+<script type="module">
+  import { header } from './header.js';
+  document.getElementById("header").innerHTML = header();
+</script>
