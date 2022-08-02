@@ -7,12 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sugar Cosmetics</title>
   <link rel="stylesheet" href="home.css">
-  
+
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  
-
-
-
   <script src="https://kit.fontawesome.com/25894adcd7.js" crossorigin="anonymous"></script>
 
 </head>
@@ -23,40 +19,40 @@
   </div>
 
 
-  <!-- Flickity HTML init -->
-  <div class="carousel" style=" width: 100%; margin:0; padding:0;"
+  <!-- main carousel -->
+  <div class="carousel" id="main-carousel" style=" width: 100%; margin:0; padding:0;"
     data-flickity='{ "fullscreen": true, "lazyLoad": 1 , "autoPlay": true , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false}'>
     <div class="carousel-cell" style="width: 100%; margin:0; padding:0;">
       <img class="carousel-cell-image"
-        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/d1134e8d-e941-4aae-b89c-9305d1b110f0.jpg" />
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/d1134e8d-e941-4aae-b89c-9305d1b110f0.jpg" />
     </div>
     <div class="carousel-cell">
       <img class="carousel-cell-image"
-        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/9f1816de-bffd-48d9-8821-63ce9b301159.jpg" />
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/9f1816de-bffd-48d9-8821-63ce9b301159.jpg" />
     </div>
     <div class="carousel-cell">
       <img class="carousel-cell-image"
-        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/be784c39-2c84-45d0-89c4-e79f72b380b0.jpg" />
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/be784c39-2c84-45d0-89c4-e79f72b380b0.jpg" />
     </div>
     <div class="carousel-cell">
       <img class="carousel-cell-image"
-        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/4cefe497-b65b-43d7-b0e8-7476e3d5b8e0.jpg" />
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/4cefe497-b65b-43d7-b0e8-7476e3d5b8e0.jpg" />
     </div>
     <div class="carousel-cell">
       <img class="carousel-cell-image"
-        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/0a0d2b46-e424-4f4c-baf3-da2d2fc14f88.jpg" />
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/0a0d2b46-e424-4f4c-baf3-da2d2fc14f88.jpg" />
     </div>
     <div class="carousel-cell">
       <img class="carousel-cell-image"
-        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/32e53a7b-879e-4c34-a5bc-b95c85ee4a9e.jpg" />
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/32e53a7b-879e-4c34-a5bc-b95c85ee4a9e.jpg" />
     </div>
     <div class="carousel-cell">
       <img class="carousel-cell-image"
-        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/7d151892-4d17-466e-8a06-743392796264.jpg" />
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/7d151892-4d17-466e-8a06-743392796264.jpg" />
     </div>
     <div class="carousel-cell">
       <img class="carousel-cell-image"
-        data-flickity-lazyload="https://d32baadbbpueqt.cloudfront.net/Homepage/85bc9b9b-d8b3-4fa1-a1b0-a77ca9428664.jpg" />
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/85bc9b9b-d8b3-4fa1-a1b0-a77ca9428664.jpg" />
     </div>
 
 
@@ -78,10 +74,174 @@
     <iframe id="video" width="80%" height="500" border:none src="https://www.youtube.com/embed/1_CEXA8sfY8"></iframe>
   </div>
 
+  <div class="refer-h1" id="ref-h3">
+    <p>BEST SELLERS</p>
+  </div>
+
+  <!--  product-slider  -->
+  <div class="carousel-1" id="product-slider"
+    data-flickity='{ "groupCells": 4, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
+    <div class="carousel-cell-1">
+      <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861"
+        alt="img" class="carousel-img">
+      <h5>METTLE PRIME BALM</h5>
+      <h4 class="price">$1099</h4>
+      <div class="add-to-cart">ADD TO CART</div>
+    </div>
+    <div class="carousel-cell-1">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116"
+        alt="img" class="carousel-img">
+      <h5>METTLE PRIME BALM</h5>
+      <h4 class="price">$1099</h4>
+      <div class="add-to-cart">SELECT SHADE</div>
+    </div>
+    <div class="carousel-cell-1">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771"
+        alt="img" class="carousel-img">
+      <h5>METTLE PRIME BALM</h5>
+      <h4 class="price">$1099</h4>
+      <div class="add-to-cart">SELECT SHADE</div>
+    </div>
+    <div class="carousel-cell-1">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813"
+        alt="img" class="carousel-img">
+      <h5>METTLE PRIME BALM</h5>
+      <h4 class="price">$1099</h4>
+      <div class="add-to-cart">SHADE</div>
+    </div>
+    <div class="carousel-cell-1"></div>
+    <div class="carousel-cell-1"></div>
+    <div class="carousel-cell-1"></div>
+    <div class="carousel-cell-1"></div>
+    <div class="carousel-cell-1"></div>
+    <div class="carousel-cell-1"></div>
+    <div class="carousel-cell-1"></div>
+    <div class="carousel-cell-1"></div>
+  </div>
+
+
+  <div class="" id="ref-h4">
+    <p>QUICK BEAUTY TIPS WITH SUGAR</p>
+  </div>
+
+
+
+  <div class="carousel" id="beauty-tips" style=" width: 100%; margin:0; padding:0;"
+    data-flickity='{ "fullscreen": true, "lazyLoad": 1 , "autoPlay": true , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false}'>
+    <div class="carousel-cell" style="width: 100%; margin:0; padding:0;">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/64f2889d-e2d9-4047-82cd-e0e820230a77.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/36e44ab4-2b5b-4b5c-b35a-fb56a9c59f1a.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/fb3fbeba-23b1-42cf-946d-d69c2a3f393f.jpg" />
+    </div>
+
+
+
+  </div>
+
+  <div class="refer-h1" id="hot-deals">
+    <p>HOT DEALS</p>
+  </div>
+
+
+
+  <!--  product-slider  -->
+  <div class="carousel-2" id="product-slider"
+    data-flickity='{ "groupCells": 3, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
+    <div class="carousel-cell-2">
+      <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/35f6bae1-6b71-4d66-b520-4b5dd885b45d.jpg"
+        alt="img" class="carousel-img-2">
+      
+    </div>
+    <div class="carousel-cell-2">
+      <img
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/01a25315-821a-43ff-9b24-41df1a5a27fb.gif"
+        alt="img" class="carousel-img-2">
+     
+    </div>
+    <div class="carousel-cell-2">
+      <img
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/9ab04656-0732-439b-ad97-d765a0b9d070.gif"
+        alt="img" class="carousel-img-2">
+     
+    </div>
+    <div class="carousel-cell-2">
+      <img
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/0dbbaf40-803d-4c01-8b07-9039c786b381.gif"
+        alt="img" class="carousel-img-2">
+      
+    </div>
+    <div class="carousel-cell-2">
+       <img
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/f1e542f5-ff94-4abd-9d89-24f1922c21b9.gif"
+        alt="img" class="carousel-img-2">
+    </div>
+    <div class="carousel-cell-2"> <img
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/5396e20a-0da8-4c04-a841-ba8d550d6a3a.gif"
+        alt="img" class="carousel-img-2"></div>
+    <div class="carousel-cell-2"> <img
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/1c8ac490-ca33-48e5-a85e-de39dc47b3f3.gif"
+        alt="img" class="carousel-img-2"></div>
+    <div class="carousel-cell-2"> <img
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/cdf8df19-f1ce-4714-8217-36b60e62304a.gif"
+        alt="img" class="carousel-img-2"></div>
+    <div class="carousel-cell-2"> <img
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/b8278548-ed11-44b4-9818-25c5146c604d.jpg"
+        alt="img" class="carousel-img-2"></div>
+    
+  </div>
+
+  <div class="refer-h1" id="new-launch">
+    <p>NEW LAUNCHES</p>
+  </div>
+
+  <!--new launches carousel 3-->
+  <div class="carousel" id="main-carousel" style=" width: 100%; margin:0; padding:0;"
+    data-flickity='{ "fullscreen": true, "lazyLoad": 1 , "autoPlay": true , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false}'>
+    <div class="carousel-cell" style="width: 100%; margin:0; padding:0;">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/a1ea3283-9593-4f1c-8e6b-70c3a5062c37.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/37471559-27d1-4509-9e31-29d889be7036.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/f25612b8-b6b8-4d08-8704-def43067c472.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/f190c764-84cf-4eea-a381-8b701be65852.gif" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/89e51326-1363-44e1-94f1-d5bd00bd2ca9.gif" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/6985f902-c3fe-4a20-bc76-1658a9109fd1.jpg" />
+    </div>
+    <div class="carousel-cell">
+      <img class="carousel-cell-image"
+        src="https://d32baadbbpueqt.cloudfront.net/Homepage/730cf92b-3d4a-4d08-bed8-db88e7911f32.jpg" />
+    </div>
+  
+
+  </div>
+
 </body>
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
 <script type="module">
   import { header } from './modules/header.js';
   document.getElementById("header").innerHTML = header();
