@@ -85,7 +85,7 @@ var makeupData = [
     }];
 
 
-localStorage.setItem("cartItems", JSON.stringify(makeupData));
+//localStorage.setItem("cartItems", JSON.stringify(makeupData));
 
 
 
@@ -429,7 +429,7 @@ let acountry = document.getElementById("acountry").value;
      //Decrement Product
      function decrementProduct(index){
         event.preventDefault();
-        count=cartArr[index].count;
+      var count=cartArr[index].count;
         if(count==1){
             removeItem(index);
         }
@@ -481,7 +481,7 @@ let acountry = document.getElementById("acountry").value;
         console.log("hello bn");
           window.location.href = "index.html";
       }
-
+document.getElementById("b1").addEventListener("click",b1)
 
       function b1(){
 
@@ -505,7 +505,7 @@ console.log(b1Obj);
 window.location.href = "cart.html"
       }
 
-
+      document.getElementById("b2").addEventListener("click",b2)
       function b2(){
 
         let b1Obj = {
@@ -528,7 +528,7 @@ console.log(b1Obj);
 window.location.href = "cart.html"
       }
 
-
+      document.getElementById("b3").addEventListener("click",b3)
       function b3(){
 
         let b1Obj = {
@@ -550,7 +550,7 @@ localStorage.setItem("cartItems",JSON.stringify(cartArr))
 console.log(b1Obj);
 window.location.href = "cart.html"
       }
-
+      document.getElementById("b4").addEventListener("click",b4)
 
       function b4(){
 
