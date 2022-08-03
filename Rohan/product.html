@@ -483,12 +483,12 @@
   let navbar_div = document.getElementById("navbar_div");
   navbar_div.innerHTML = header();
 
-  let searchBar = document.getElementById("search-bar");
-  document.getElementById("search-icon").addEventListener("click", async () => {
-    let searchParam = searchBar.value;
-    localStorage.setItem("search_term", searchParam);
-    location.href = "product.html";
-  });
+  // let searchBar = document.getElementById("search-bar");
+  // document.getElementById("search-icon").addEventListener("click", async () => {
+  //   let searchParam = searchBar.value;
+  //   localStorage.setItem("search_term", searchParam);
+  //   location.href = "product.html";
+  // });
 
   const getData = async (url) => {
     try {
@@ -514,7 +514,7 @@
       let card = document.createElement("div");
 
       let image = document.createElement("img");
-      // image.src = product.urls.small;
+      
       image.src = product.image_link;
       image.alt = "OUT OF STOCK AT THE MOMENT";
       image.onerror=()=>{
@@ -522,11 +522,11 @@
       }
 
       let title = document.createElement("h5");
-      // title.innerText = product.alt_description;
+      
       title.innerText = product.name;
 
       let price = document.createElement("p");
-      // price.textContent = "Rs." + getRandomNumberBetween(500,1500);
+     
       price.textContent = "Rs. " + product.price * 54;
 
       let rating = document.createElement("p");
@@ -553,16 +553,18 @@
       container.append(card);
     });
   };
-  async function init() {
+  async function init(event) {
+    event.preventDefault();
     try {
-      // http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick
-      const searchTerm = localStorage.getItem("search_term");
-      // let url = `https://api.unsplash.com/search/photos/?client_id=${accessKey}&query=${searchTerm}&per_page=12`;
-      let url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${searchTerm}&price_greater_than=0`;
-      //   console.log(url);
+      
+      let searchTerm=document.getElementById("search-bar").value;
+      console.log(searchTerm);
+      console.log("Ayush");
+      let url = `http://localhost:3000/all?q=${searchTerm}`;
+      
       let data = await getData(url);
-      // console.log(data.results);
-      await displayData(data);
+     
+      displayData(data);
     } catch (error) {
       console.log(error);
     }
@@ -570,7 +572,7 @@
 
 document.querySelector("#lips").addEventListener("click",async()=>{
   try {
-    let url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=lip_liner&price_greater_than=0`;
+    let url = `http://localhost:3000/all?q=lip_liner`;
     let data = await getData(url);
     console.log(data);
      await displayData(data);
@@ -581,7 +583,7 @@ document.querySelector("#lips").addEventListener("click",async()=>{
 
 document.querySelector("#eyes").addEventListener("click",async()=>{
   try {
-    let url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyebrow&price_greater_than=0`;
+    let url = `http://localhost:3000/all?q=eyebrow`;
     let data = await getData(url);
     console.log(data);
      await displayData(data);
@@ -592,7 +594,7 @@ document.querySelector("#eyes").addEventListener("click",async()=>{
 
 document.querySelector("#face").addEventListener("click",async()=>{
   try {
-    let url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=blush&price_greater_than=0`;
+    let url = `http://localhost:3000/all?q=blush`;
     let data = await getData(url);
     console.log(data);
      await displayData(data);
@@ -603,7 +605,7 @@ document.querySelector("#face").addEventListener("click",async()=>{
 
 document.querySelector("#eyebrush").addEventListener("click",async()=>{
   try {
-    let url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=mascara&price_greater_than=0`;
+    let url = `http://localhost:3000/all?q=mascara`;
     let data = await getData(url);
     console.log(data);
      await displayData(data);
@@ -614,7 +616,7 @@ document.querySelector("#eyebrush").addEventListener("click",async()=>{
 
 document.querySelector("#facebrush").addEventListener("click",async()=>{
   try {
-    let url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=bronzer&price_greater_than=0`;
+    let url = `http://localhost:3000/all?q=bronzer`;
     let data = await getData(url);
     console.log(data);
      await displayData(data);
@@ -623,5 +625,5 @@ document.querySelector("#facebrush").addEventListener("click",async()=>{
   }
 })
 
-  init();
+ document.getElementById("search-icon").addEventListener("click",init);
 </script>
