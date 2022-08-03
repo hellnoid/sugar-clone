@@ -85,7 +85,7 @@ var makeupData = [
     }];
 
 
-//localStorage.setItem("cartItems", JSON.stringify(makeupData));
+localStorage.setItem("cartItems", JSON.stringify(makeupData));
 
 
 
@@ -279,11 +279,21 @@ var makeupData = [
     function checkOut(event){
         total = JSON.parse(localStorage.getItem("total"));
         // window.location.href = "payment.html"
-        if(total!=0){
-            window.location.href = "payment.html"
+let aname = document.getElementById("aname").value;
+let aphone = document.getElementById("aphone").value;
+let aemail = document.getElementById("aemail").value;
+let azip = document.getElementById("azip").value;
+let alocality = document.getElementById("alocality").value;
+let acity = document.getElementById("acity").value;
+let acountry = document.getElementById("acountry").value;
+
+
+
+        if(aname == "" || aphone=="" || aemail=="" || azip=="" || alocality == ""|| acity=="" || acountry==""){
+           alert("Please Enter Delivery Address!")
         }
         else{
-            alert("Cart is Empty");
+          window.location.href = "payment.html"
         }
         
     }

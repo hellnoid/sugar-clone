@@ -38,11 +38,6 @@
 
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 body {
   margin: 0px;
@@ -84,9 +79,9 @@ body {
 
 }
 
-.icon {
-  width: 30px;
-  height: 30px;
+.icon-c {
+  width: 20px;
+  height: 20px;
   padding: 5px;
   margin-top: 15px;
 }
@@ -363,3 +358,4 @@ height:60px;
   font-family: quicksand, sans-serif;
   font-size: 40px;
 }
+ 
