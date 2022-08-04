@@ -16,16 +16,16 @@ navlogin.addEventListener("click", () => {
   login.style.display = "block";
   login.style.overflowY;
 });
-//=======================Animation
+//===========Animation
 let close = document.getElementById("close");
 close.addEventListener("click", () => {
   let login = document.getElementById("signappend");
   login.style.transform = "translateX(800px)";
-  login.style.transition = "2s";
+  login.style.transition = "1s";
   setTimeout(()=>{
     login.style.display="none";
     login.style.transform = "translateX(0px)"
-  },2000);
+  },1000);
  
 });
 
@@ -77,7 +77,7 @@ function userName() {
     let lastname = document.getElementById("userlastname").value;
     obj = { username, lastname };
     localStorage.setItem("userDetails", JSON.stringify(obj));
-    window.location.href = "index.html";
+    window.location.href = "login.html";
   });
 }
 localStorage.setItem("userDetails", JSON.stringify(obj));
