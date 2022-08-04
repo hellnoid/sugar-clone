@@ -1,36 +1,36 @@
-// function navbar() {
-//   return `
-//   <div id="navbar">
-//   <div id="offer">
-//     <h5>FREE set of 4 lipsticks & pouch on a spend of Rs.999</h5>
-//   </div>
-//   <div id="head">
-//     <img
-//       src="https://media.sugarcosmetics.com/upload/Logo-static.jpg"
-//       alt=""
-//     />
-//     <input
-//       type="text"
-//       placeholder="Search for products.."
-//       id="searchParam"
-//     />
-//     <button id="search-btn">Search</button>
-//     <a href="#"
-//       ><h5><i class="fa-solid fa-user"></i> Login/Register</h5></a
-//     >
-//     <div id="functions">
-//       <a href="#"><i class="fa-solid fa-heart"></i></a>
-//       <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-//       <a href="#"
-//         ><img
-//           src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg"
-//           alt=""
-//       /></a>
-//     </div>
-//   </div>
-// </div>`;
-// }
-// export default navbar;
+function navbar() {
+  return `
+  <div id="navbar">
+  <div id="offer">
+    <h5>FREE set of 4 lipsticks & pouch on a spend of Rs.999</h5>
+  </div>
+  <div id="head">
+    <img
+      src="https://media.sugarcosmetics.com/upload/Logo-static.jpg"
+      alt=""
+    />
+    <input
+      type="text"
+      placeholder="Search for products.."
+      id="searchParam"
+    />
+    <button id="search-btn">Search</button>
+    <a href="#"
+      ><h5><i class="fa-solid fa-user"></i> Login/Register</h5></a
+    >
+    <div id="functions">
+      <a href="#"><i class="fa-solid fa-heart"></i></a>
+      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+      <a href="#"
+        ><img
+          src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg"
+          alt=""
+      /></a>
+    </div>
+  </div>
+</div>`;
+}
+export default navbar;
 
 let header = () => {
   return `<div id="head1">
@@ -59,9 +59,9 @@ let header = () => {
        
       </button>
       <div class="dropdown-content">
-        <a href="#">LIPS</a>
-        <a href="#">EYES</a>
-        <a href="#">FACE</a>
+        <a id="lips" href="#">LIPS</a>
+        <a id="eyes" href="#">EYES</a>
+        <a id="face" href="#">FACE</a>
       </div>
     </div> 
      <div class="dropdown">
@@ -69,8 +69,8 @@ let header = () => {
        
       </button>
       <div class="dropdown-content">
-        <a href="#">FACE BRUSHES</a>
-        <a href="#">EYE BRUSHES</a>
+        <a id="facebrush" href="#">FACE BRUSHES</a>
+        <a id="eyebrush" href="#">EYE BRUSHES</a>
        
       </div>
     </div> 
@@ -79,8 +79,8 @@ let header = () => {
        
       </button>
       <div class="dropdown-content">
-        <a href="#">MOISTURISERS</a>
-        <a href="#">SUNSCREEN</a>
+        <a id="moisturisers" href="#">MOISTURISERS</a>
+        <a id="sunscreen" href="#">SUNSCREEN</a>
         <a href="#">SETTING MISTS</a>
         <a href="#">COFFE CULTURE<br> RANGE</a>
         <a href="#">SHEET MASK<br> COMBO</a>

@@ -76,7 +76,7 @@
       border-radius: 0px 50px 50px 0px;
       /* border-bottom-right-radius: 30px;
       border-top-right-radius: 30px; */
-      
+
       color: white;
       background-color: black;
       font-family: quicksand, sans-serif;
@@ -471,24 +471,42 @@
       color: #fff;
       height: 30px;
     }
+    /* MEDIA QUERIES */
+    @media only screen and (max-width: 599px) {
+      #container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        row-gap: 30px;
+        padding: 20px;
+        width: 231px;
+        margin: 100px;
+        margin-top: 20px;
+      }
+    }
+    @media only screen and (min-width: 600px) and (max-width: 1100px) {
+      #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        row-gap: 30px;
+        padding: 20px;
+        width: 231px;
+        margin: 100px;
+        margin-top: 20px;
+      }
+    }
   </style>
   <body>
     <div id="navbar_div"></div>
     <div id="container"></div>
+    <div id=""></div>
   </body>
 </html>
 <script type="module">
   import { header } from "./header.js";
   let navbar_div = document.getElementById("navbar_div");
   navbar_div.innerHTML = header();
-
-  let searchBar = document.getElementById("search-bar");
-  document.getElementById("search-icon").addEventListener("click", async () => {
-    let searchParam = searchBar.value;
-    localStorage.setItem("search_term", searchParam);
-
-    location.href = "product.html";
-  });
 
   const getData = async (url) => {
     try {
@@ -506,23 +524,27 @@
 
   const displayData = (data) => {
     let cartArrayFinal = [];
+    let container = document.getElementById("container");
+    container.innerHTML = "";
     data.forEach((product) => {
-      let cartArray = [];
-      let container = document.getElementById("container");
       let card = document.createElement("div");
 
       let image = document.createElement("img");
-      // image.src = product.urls.small;
+
       image.src = product.image_link;
       image.alt = "OUT OF STOCK AT THE MOMENT";
+      image.onerror = () => {
+        image.src =
+          "https://wisdmlabs.com/site/wp-content/uploads/2014/09/woocommerce-out-of-stock-label.png";
+      };
 
       let title = document.createElement("h5");
-      // title.innerText = product.alt_description;
+
       title.innerText = product.name;
 
       let price = document.createElement("p");
-      // price.textContent = "Rs." + getRandomNumberBetween(500,1500);
-      price.textContent = "Rs. " + product.price * 54;
+
+      price.textContent = "Rs. " + product.price * 54.0;
 
       let rating = document.createElement("p");
       rating.innerHTML = `<i class="fa-light fa-star"></i>`;
@@ -534,33 +556,80 @@
       cart.innerText = "ADD TO CART";
       cart.addEventListener("click", function () {
         cart.innerText = "ADDED!";
-        cartArray.push(
-          image.src,
-          title.innerText,
-          price.textContent,
-          rating.textContent
-        );
+        let cartArray = {
+          image: image.src,
+          title: title.innerText,
+          price: price.textContent,
+          rating: rating.textContent,
+        };
+
         cartArrayFinal.push(cartArray);
-        localStorage.setItem("cart", cartArrayFinal);
+        localStorage.setItem("cart", JSON.stringify(cartArrayFinal));
       });
 
       card.append(image, title, price, rating, cart);
       container.append(card);
     });
   };
-  async function init() {
+  async function init(event) {
+    event.preventDefault();
     try {
-      // http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick
-      const searchTerm = localStorage.getItem("search_term");
-      // let url = `https://api.unsplash.com/search/photos/?client_id=${accessKey}&query=${searchTerm}&per_page=12`;
-      let url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${searchTerm}&price_greater_than=0`;
-      //   console.log(url);
+      let searchTerm = document.getElementById("search-bar").value;
+      console.log(searchTerm);
+      let url = `http://localhost:3000/all?q=${searchTerm}`;
+
       let data = await getData(url);
-      // console.log(data.results);
-      await displayData(data);
+
+      displayData(data);
     } catch (error) {
       console.log(error);
     }
   }
-  init();
+
+  document.querySelector("#lips").addEventListener("click", async () => {
+    try {
+      let url = `http://localhost:3000/all?q=lip_liner`;
+      let data = await getData(url);
+      console.log(data);
+      await displayData(data);
+    } catch (error) {}
+  });
+
+  document.querySelector("#eyes").addEventListener("click", async () => {
+    try {
+      let url = `http://localhost:3000/all?q=eyebrow`;
+      let data = await getData(url);
+      console.log(data);
+      await displayData(data);
+    } catch (error) {}
+  });
+
+  document.querySelector("#face").addEventListener("click", async () => {
+    try {
+      let url = `http://localhost:3000/all?q=blush`;
+      let data = await getData(url);
+      console.log(data);
+      await displayData(data);
+    } catch (error) {}
+  });
+
+  document.querySelector("#eyebrush").addEventListener("click", async () => {
+    try {
+      let url = `http://localhost:3000/all?q=mascara`;
+      let data = await getData(url);
+      console.log(data);
+      await displayData(data);
+    } catch (error) {}
+  });
+
+  document.querySelector("#facebrush").addEventListener("click", async () => {
+    try {
+      let url = `http://localhost:3000/all?q=bronzer`;
+      let data = await getData(url);
+      console.log(data);
+      await displayData(data);
+    } catch (error) {}
+  });
+
+  document.getElementById("search-icon").addEventListener("click", init);
 </script>
