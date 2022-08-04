@@ -356,6 +356,12 @@ margin-bottom: 10px;
         "N N N N N N N N N N N N"
         "L L L L L L L L L L L L";
     }
+
+
+    #checkOut{
+      margin-left: -45px;
+    width: 50px;
+    }
   }
   
   @media only screen and (min-width: 0px) and (max-width: 400px) {
@@ -366,6 +372,7 @@ margin-bottom: 10px;
         "L L L L L L L L L L L L";
         
     }
+ 
     .smry-box{
   
       display: flex;
@@ -405,6 +412,8 @@ margin-bottom: 10px;
       display: flex;
       flex-direction: column;
     }
+  
+
   }
   
   .fname-phno{
@@ -448,7 +457,7 @@ margin-bottom: 10px;
   td, th { padding: .5em }
   
   .checkout-btn{
-    width: 100%;
+    width: 100px;
     display: flex;
       /* flex-direction: column; */
   }
@@ -615,7 +624,7 @@ margin-bottom: 10px;
 
     #button{
       display: flex;
-      gap: 50px;
+      gap: 10px;
       margin-left: 20px;
     }
 
