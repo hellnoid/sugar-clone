@@ -1,7 +1,7 @@
 let header = () => {
   return `<div id="head1">
           
-  <a href=""> <img src="https://media.sugarcosmetics.com/upload/Logo-static.jpg" id="logo"></a>
+ <div id="sugar-img"> <a href=""> <img src="https://media.sugarcosmetics.com/upload/Logo-static.jpg" id="logo"></a></div>
       <div id="search">
            <input id="search-bar" type="text" placeholder="Try Liquid Lipstick">
      
@@ -10,10 +10,10 @@ let header = () => {
    
       <img id="user" class="icon-c" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/2048px-OOjs_UI_icon_userAvatar.svg.png"> 
      
-      <a id="login-signup" href="" >Login/Register</a>
+      <div id="login-signup"><a  href="" >Login/Register</a></div>
   
 <!-----   icons --->
-  <a href=""><img id="heart" class="icon-c" src="https://cdn0.iconfinder.com/data/icons/glyphpack/51/heart-512.png">  </a>
+ <div id="heart"> <a href=""><img  class="icon-c" src="https://cdn0.iconfinder.com/data/icons/glyphpack/51/heart-512.png"></div>  </a>
  <a href=""><img class="icon-c" src="https://cdn-icons-png.flaticon.com/512/7446/7446956.png">  </a>
  <a href=""><img  class="icon-c" src="https://static.thenounproject.com/png/170070-200.png"></a>
                   

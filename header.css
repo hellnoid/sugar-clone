@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/zna8lui.css");
 
 #head1 {
-  display: flex;
+  display: block;
   padding: 20px;
 
   background-color: whitesmoke;
@@ -14,8 +14,8 @@
 
 #search {
   width: 52%;
-
-  display: flex;
+background-color: aqua;
+  display: inline-block;
 
 }
 
