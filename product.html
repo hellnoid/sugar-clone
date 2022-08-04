@@ -557,10 +557,11 @@
       cart.addEventListener("click", function () {
         cart.innerText = "ADDED!";
         let cartArray = {
-          image: image.src,
-          title: title.innerText,
+          image_url: image.src,
+          name: title.innerText,
           price: price.textContent,
           rating: rating.textContent,
+          count: 1,
         };
 
         cartArrayFinal.push(cartArray);
