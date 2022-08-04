@@ -7,6 +7,7 @@
   background-color: whitesmoke;
 }
 
+
 #logo {
   width: 250px;
 
@@ -38,6 +39,11 @@
 
 }
 
+* {
+  box-sizing: border-box;
+  margin: revert;
+  padding: revert;
+}
 
 body {
   margin: 0px;
@@ -80,8 +86,8 @@ body {
 }
 
 .icon-c {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   padding: 5px;
   margin-top: 15px;
 }
@@ -135,9 +141,10 @@ body {
 
 .refer-h1 {
 
-  margin-top: 35px;
+  margin-top: 25px;
+  padding: 15px;
   text-align: center;
-  padding: 25px;
+  
   font-family: quicksand, sans-serif;
   font-size: 40px;
 }
@@ -281,8 +288,11 @@ body {
   margin:0;
 }
 h5{
-  margin-top:10px;
-  margin-left:25%;
+  /*margin-top:10px;
+  margin-left:25%;*/
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
 }
 .price{
 
@@ -358,5 +368,190 @@ height:60px;
   font-family: quicksand, sans-serif;
   font-size: 40px;
 }
+
+
+
+
+
+
+
+
+.carousel-3 {
  
+  width:90%;
+  margin:auto;
+  height:500px;
+  
  
+}
+.carousel-cell-3 {
+  margin: 0px;
+ 
+			padding: 0px;
+			height: 100%;
+		
+
+}
+
+
+.carousel-cell-3 {
+ 
+ padding: 10px;
+  
+
+  display: block;
+  width: 22%;
+ border-radius: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+
+.carousel-cell-3.is-selected {
+   width: 22%;
+   height: 100%;
+   border-radius: 20px;
+   
+}
+
+/* cell number */
+.carousel-cell-3:before {
+  display: block;
+   width: 22%;
+   height: 100%;
+  border-radius: 20px;
+}
+#rakhi{
+  margin-top: 36%;
+  margin-bottom: 36%;
+}
+#tot img{
+  width: 40%;
+  margin: 10px 70px;
+
+}
+#tot{
+  margin-left: 40px;
+}
+#explore-img img{
+  margin: 10px 30px;
+}
+#explore-img {
+  margin-left: 20px;
+}
+
+
+#mainfooter{
+  
+  background-color: black;
+ 
+  text-align: center;
+  color: gray;
+  font-family: sans-serif;
+  
+
+}
+#footersugaricon>img{
+  height: 140px;
+  width: 140px;
+}
+#footersocialmedia>img{
+  height: 25px;
+  width: 25px;
+
+}
+#footersocialmedia{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+#twofooters{
+  display: flex;
+  
+  justify-content: space-around;
+  margin-top: 40px;
+
+}
+
+#thright img{
+  height: 30px;
+  width: 100px;
+}
+#tfleft{
+  width: 450px;
+  text-align: left;
+  
+}
+#footsignup>input{
+  background-color: black;
+  color: gray;
+  height: 30px;
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid white;
+}
+#footsignup{
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  
+}
+#footsignup>button{
+  border-radius: 4px;
+  background-color: rgb(240, 52, 83);
+  padding: 10px;
+  color: aliceblue;
+}
+#thright{
+  
+  width: 500px;
+  text-align: left;
+}
+#thr1{
+  display: flex;
+}
+#thr1>p{
+  width: 180px;
+}
+#playstore{
+  display: flex;
+  align-items: center;
+}
+#write1{
+  display: flex;
+  gap: 80px;
+  margin-left: 100px;
+}
+
+#git{
+  margin-top: 20px;
+  margin-left: 7.4%;
+  display: flex;
+  justify-content: left;
+  font-weight: 500;
+  color: aliceblue;
+}
+#foot{
+  display: flex;
+  /* gap: 50px; */
+  justify-content: space-evenly;
+}
+#footlast{
+  color: white;
+  font-weight: 500;
+  padding: 15px;
+}
+#fut{
+  display: flex;
+  gap: 10px;
+}
+.footseclast,#footseclast1{
+  text-align: left;
+}
+.footseclast >p:first-child,#fut p{
+  color: aliceblue;
+  font-weight: 400;
+}
+#footseclast1>p{
+  margin-top: 0px;
+}
