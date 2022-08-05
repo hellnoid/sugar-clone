@@ -1,3 +1,6 @@
+p,button{
+    cursor: pointer;
+}
 #mainfooter{
     background-color: black;
     text-align: center;
@@ -76,6 +79,11 @@
     gap: 80px;
     margin-left: 100px;
 }
+#write1 p{
+    display: block;
+    transition: all 0.5s ease-in-out;
+
+}
 
 #git{
     margin-top: 20px;
@@ -85,6 +93,7 @@
     font-weight: 500;
     color: aliceblue;
 }
+
 #foot{
     display: flex;
     /* gap: 50px; */
@@ -108,4 +117,33 @@
 }
 #footseclast1>p{
     margin-top: 0px;
+}
+@media screen and (max-width: 916px) {
+    *{
+        padding-left: 10px;
+    }
+        #twofooters{
+            display:block;
+        }
+        #write1{
+            display:block;
+            text-align: center;
+            margin-left: 0;
+        }
+        #foot{
+            display: block;
+        }
+        #footlast{
+            display: block;
+        }
+        #footsignup{
+            display: block;
+        }
+
+  }
+  @media screen and (max-width: 420px) {
+    #footermain{
+        display:none;
+    }
+
 }
