@@ -3,10 +3,21 @@
 #head1 {
   display: flex;
   padding: 20px;
-
+ width: 100%;
+ 
+ background-color:  whitesmoke;
+}
+#header{
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
 }
 
-
+.navbar{
+  width: 100%;
+}
 #logo {
   width: 250px;
   
@@ -98,21 +109,20 @@ font-size: 20px;
 
 
 #user {
- margin-left: 120px;
+ padding-left: 120px;
 
   /*    Carousel      */
 
 }
 #heart {
-margin-left: 120px;
- 
- 
+
+ padding-left: 120px;
 }
 
 .carousel {
   background: #fff;
   width: 100%;
-
+margin-top: 100px;
 
 
 }
@@ -120,8 +130,6 @@ margin-left: 120px;
 .carousel-cell {
 
   width: 100%;
-
-
   margin: 0px;
   /* center images in cells with flexbox *
    display: flex;
@@ -156,7 +164,7 @@ margin-left: 120px;
 }
 
 #refimg {
-
+  
   width: 92%;
   margin-top: 10px;
   margin-right: 50px;
@@ -584,7 +592,10 @@ height:60px;
    
   }
   
- 
+  #refimg{
+    margin: 0;
+    width: 100%;
+      }
  
   .carousel-1{
     height: fit-content;
@@ -615,9 +626,10 @@ height:60px;
  
   
   #video{
-   width: 80%;
+   width: 100%;
     height: 400px;
-   vertical-align: middle;
+margin: 0;
+
   
     border: none;
   }
@@ -651,7 +663,243 @@ height:60px;
  grid-template-columns: 1fr 1fr;
  gap: 10px;
 }
-#explore-img img{
+#bar-icon{
+  width: 150px;
+  margin-top: 25px;
+  display: none;
+}
+}
+
+
+
+@media screen and (min-width: 868px){
+  #bar-icon{
+    display: none;
+  }
+ 
+}
+
+
+@media screen and (max-width: 868px) {
+  .navbar{
+    display: none;
+    
+   }
+   #mainfooter{
+    display: none;
+  }
+   #search{
+     display: none;
+   }
+   #bar-icon{
+    display: block;
+    font-size: 20px;
+    padding-left: 70px;
+    height: 40px;
+    margin-top: 25px;
+    
+  }
+ }
+
+ @media screen and (max-width: 600px){
+  .navbar{
+    display: none;
+    
+   }
+    #ref-h4, #ref-h3, #ref-h2, .refer-h1,#new-launch{
+    font-size: 30px;
+   }
+
+   #mainfooter{
+    display: none;
+  }
+   #search{
+     display: none;
+   }
+   #bar-icon{
+    display: block;
+    font-size: 20px;
+    padding-left: 70px;
+    height: 40px;
+    margin-top: 25px;
+    
+  }
+  .login-signup {
+    display: none ;
+  }
+ 
+  .icon-c{
+  display: none;
+  }
   
+  #video{
+   
+    height: 150px;
+   width: 100%;
+   margin: 0;
+    border: none;
+  }
+ 
+  #refimg{
+margin: 0;
+width: 100%;
+  }
+
+  .carousel{
+    width:100%;
+   
+  }
+
+  .carousel-1{
+    height: fit-content;
+    
+  }
+  
+ 
+  .carousel-cell-1{
+    
+       width: 70%;
+      
+  }
+  .carousel-cell-1.is-selected{
+   
+    width: 70%;
+    
+  }
+  .carousel-cell-1:before{
+    
+    width: 70%;
+   
+  }
+.carousel-cell-2{
+  width: 100%;
 }
+.carousel-cell-2.is-selected{
+
+ width: 100%;
 }
+.carousel-cell-2:before{
+ 
+ width: 100%;
+}
+.carousel-cell-3{
+  width: 100%;
+}
+.carousel-cell-3.is-selected{
+
+ width: 100%;
+}
+.carousel-cell-3:before{
+ 
+ width: 100%;
+}
+#explore-img{
+  grid-template-columns: 100%;
+  gap: 10px;
+ }
+ #tot{
+  grid-template-columns: 100%;
+  gap: 10px;
+ }
+  
+
+ }
+
+
+@media screen and (min-width:600px) and (max-width: 768px)  {
+  .navbar{
+   display: none;
+   
+  }
+  #ref-h4, #ref-h3, #ref-h2, .refer-h1,#new-launch{
+    font-size: 35px;
+   }
+  #refimg{
+    margin: 0;
+    width: 100%;
+      }
+  #search{
+    display: none;
+  }
+  #bar-icon{
+    display: block;
+    font-size: 20px;
+    padding-left: 70px;
+    height: 40px;
+    
+  }
+  #sugar-img{
+      margin-left: 0px;
+  }
+  .login-signup {
+    display: none ;
+  }
+  #user{
+    display: hidden;
+  }
+  #heart{
+    padding-left: 100px;
+  }
+ 
+  #video{
+   
+     height: 200px;
+    padding-right: 50px;
+     border: none;
+   }
+   .carousel{
+    width:100%;
+   
+  }
+
+   .carousel-1{
+    height: fit-content;
+  }
+   .carousel-cell-1{
+    
+    width: 40%;
+    height: fit-content;
+}
+.carousel-cell-1.is-selected{
+
+ width: 40%;
+ height: fit-content;
+}
+.carousel-cell-1:before{
+ 
+ width: 40%;
+ height: fit-content;
+}
+
+.carousel-cell-2{
+  width: 100%;
+}
+.carousel-cell-2.is-selected{
+
+ width: 100%;
+}
+.carousel-cell-2:before{
+ 
+ width: 100%;
+}
+.carousel-cell-3{
+  width: 50%;
+}
+.carousel-cell-3.is-selected{
+
+ width: 50%;
+}
+.carousel-cell-3:before{
+ 
+ width: 50%;
+}
+#explore-img{
+  grid-template-columns: 100%;
+  gap: 10px;
+ }
+ #tot{
+  grid-template-columns: 100%;
+  gap: 10px;
+ }
+  
+ }

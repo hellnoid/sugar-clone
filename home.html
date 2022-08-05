@@ -21,7 +21,7 @@
 
   <!-- CAROUSEL-->
 
-  <div class="carousel" id="main-carousel" style=" width: 100%; margin:0; padding:0;"
+  <div class="carousel" id="main-carousel" style=" width: 100%; margin-top:180px; padding:0; "
     data-flickity='{ "fullscreen": true, "lazyLoad": 1 , "autoPlay": true , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false}'>
     <div class="carousel-cell" style="width: 100%; margin:0; padding:0;">
       <img class="carousel-cell-image"
@@ -385,7 +385,7 @@
 
 
   <div class="carousel-1" id="product-slider"
-    data-flickity='{ "groupCells": 4, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
+    data-flickity='{ "groupCells": true, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
     <div class="carousel-cell-1">
       <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_e4b6c948-178e-4bfe-a3b3-926119dea615.jpg?v=1649865681"
         alt="img" class="carousel-img">
@@ -512,7 +512,7 @@
 
 
   <div class="carousel-1" id="product-slider"
-    data-flickity='{ "groupCells": 4, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
+    data-flickity='{ "groupCells": true, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
     <div class="carousel-cell-1">
       <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/Gift-card-rakshabandhan-500.jpg?v=1657814576"
         alt="img" class="carousel-img" id="rakhi">
@@ -624,7 +624,7 @@
 
 
 <div class="carousel-1" id="product-slider"
-  data-flickity='{ "groupCells": 4, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
+  data-flickity='{ "groupCells": true, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
   <div class="carousel-cell-1">
     <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/414584697-rakhi-gift-kit-wbg-images-1.jpg?v=1658505710"
       alt="img" class="carousel-img">
@@ -770,7 +770,7 @@
 
 
 <div class="carousel-1" id="product-slider"
-  data-flickity='{ "groupCells": 4, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
+  data-flickity='{ "groupCells": true, "autoPlay": false , "draggable": false, "wrapAround": true, "pauseAutoPlayOnHover": false,"bgLazyLoad": 4 ,"pageDots":false}'>
   <div class="carousel-cell-1">
     <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/CCLipScrubWBG-3.jpg?v=1628610315"
       alt="img" class="carousel-img">
@@ -881,7 +881,10 @@
 </div>
 </body>
 
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js">
+ 
+
+</script>
 <script type="module">
   import { header } from './header.js';
   document.getElementById("header").innerHTML = header();

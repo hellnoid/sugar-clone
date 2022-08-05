@@ -1,6 +1,9 @@
 let header = () => {
   return `<div id="head1">
-          
+  <div id="bar-icon">
+  <a  class="icon" onclick="myFunction()" >
+  <i class="fa fa-bars" ></i>
+  </a></div> 
  <div id="sugar-img"> <a href=""> <img src="https://media.sugarcosmetics.com/upload/Logo-static.jpg" id="logo"></a></div>
       <div id="search">
            <input id="search-bar" type="text" placeholder="Try Liquid Lipstick">
@@ -10,10 +13,10 @@ let header = () => {
    
       <img id="user" class="icon-c" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/2048px-OOjs_UI_icon_userAvatar.svg.png"> 
      
-      <div id="login-signup"><a  href="" >Login/Register</a></div>
+      <div id="login-signup"><a class="login-signup" href="" >Login/Register</a></div>
   
 <!-----   icons --->
- <div id="heart"> <a href=""><img  class="icon-c" src="https://cdn0.iconfinder.com/data/icons/glyphpack/51/heart-512.png"></div>  </a>
+ <div id="heart"> <a href=""><img  class="icon-c" src="https://cdn0.iconfinder.com/data/icons/glyphpack/51/heart-512.png">  </a></div>
  <a href=""><img class="icon-c" src="https://cdn-icons-png.flaticon.com/512/7446/7446956.png">  </a>
  <a href=""><img  class="icon-c" src="https://static.thenounproject.com/png/170070-200.png"></a>
                   
@@ -23,7 +26,7 @@ let header = () => {
 <!-----------head2-->
 
 
-<div class="navbar">
+<div class="navbar" id="navbar">
 
     <div class="dropdown">
       <button class="dropbtn">MAKEUP 
@@ -84,10 +87,10 @@ let header = () => {
       </div>
     </div> 
     
-    <a href="">OFFERS</a>
-    <a href="">STORES</a>
-  </div>`
-
+    <a class="dropdown" href="">OFFERS</a>
+    <a class="dropdown" href="">STORES</a>
+  </div>
+ `
 
 }
 export { header }
