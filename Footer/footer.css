@@ -125,6 +125,12 @@ p,button{
         #twofooters{
             display:block;
         }
+        #playstore img,#playstore{
+            display: block;
+        }
+        #footsignup input,#footsignup button{
+            display: block;
+        }
         #write1{
             display:block;
             text-align: center;
