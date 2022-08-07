@@ -339,6 +339,7 @@ margin-bottom: 10px;
     color:red;
     margin-left: 210px;
    
+   
   }
   .valid-coupon{
     color:rgb(3, 120, 7);
@@ -372,6 +373,8 @@ margin-bottom: 10px;
         "L L L L L L L L L L L L";
         
     }
+
+ 
  
     .smry-box{
   
@@ -448,6 +451,7 @@ margin-bottom: 10px;
   .discount-txt{
     display: flex;
     gap: 80px;
+   
   }
   /* .price-table>table>tbody>tr>td{
     margin-bottom:50px;
@@ -726,3 +730,13 @@ padding: 20px;
 margin-bottom: 20px;
 }
 
+#footerImg{
+
+
+  height: 400px;
+}
+
+#imageFooter{
+  width: 100%;
+  height: 600px;
+}
