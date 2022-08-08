@@ -1,8 +1,8 @@
-import { header } from "./header.js";
+import { login } from "./login.js";
 
 let logininfo = JSON.parse(localStorage.getItem("info")) || [];
 
-document.getElementById("header").innerHTML = header();
+document.getElementById("login").innerHTML = login();
 
 import { signUpPage, infopage } from "./signUpPage.js";
 
@@ -77,7 +77,7 @@ function userName() {
     let lastname = document.getElementById("userlastname").value;
     obj = { username, lastname };
     localStorage.setItem("userDetails", JSON.stringify(obj));
-    window.location.href = "index.html";
+    window.location.href = "login.html";
   });
 }
 localStorage.setItem("userDetails", JSON.stringify(obj));
@@ -87,10 +87,9 @@ let userInfo = JSON.parse(localStorage.getItem("userDetails"));
 if (Object.keys(userInfo).length > 0) {
   let changename = document.getElementById("changename");
   changename.innerText =
-    "Hi," + userInfo.username ;
+    "Hi," + userInfo.username + " " + userInfo.lastname + " ";
   let changebox = document.getElementById("navlogin");
   changebox.style.backgroundColor = "lightgrey";
-  changebox.style.height = "45px";
-  changebox.style.width = "250px";
-  changebox.style.padding = "0px";
+  changebox.style.height = "30px";
+  changebox.style.padding = "5px";
 }

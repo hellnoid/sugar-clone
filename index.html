@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="https://1000logos.net/wp-content/uploads/2020/07/SUGAR-Cosmetics-Logo1.jpg">
-  <title>Buy Beauty Products at SUGAR Cosmetics</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Sugar Cosmetics</title>
   <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="signUpPage.css">
+
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://kit.fontawesome.com/25894adcd7.js" crossorigin="anonymous"></script>
 
@@ -891,8 +889,13 @@
   import { header } from './header.js';
   document.getElementById("header").innerHTML = header();
 
-  
- 
+  let searchBar = document.getElementById("search-bar");
+document.getElementById("search-icon").addEventListener("click", async ()=>{
+    let searchParam = searchBar.value;
+    localStorage.setItem("search_term", searchParam);
+
+    location.href = "product.html";
+})
 // document.querySelector("#lips").addEventListener("click", async () => {
 //     try {
 //       let url = `http://localhost:3000/all?q=lip_liner`;
@@ -939,60 +942,9 @@
 //   });
   import { footer } from './footer.js';
   document.getElementById("mainfooter").innerHTML = footer();
-  // import { header } from "./header.js";
-  
-</script>
-<script src="./common.js" type="module"></script>
-<script>
- function gotoProductPageIN(){
-   console.log("yo");
-   let searchBar = document.getElementById("search-bar");
-   let searchParam = searchBar.value;
-   localStorage.setItem("search_term", searchParam);
-   window.open("product.html","_self");
-}
-
-function LIPS(){
-   
-   
-   let searchParam = "lipstick";
-   localStorage.setItem("search_term", searchParam);
-   window.open("product.html","_self");
-}
-
-function EYE(){
-   
-   
-   let searchParam = "eyebrow";
-   localStorage.setItem("search_term", searchParam);
-   window.open("product.html","_self");
-}
-
-function FACE(){
-   
-   
-   let searchParam = "blush";
-   localStorage.setItem("search_term", searchParam);
-   window.open("product.html","_self");
-}
-
-function EYEBRUSH(){
-   
-   
-   let searchParam = "mascara";
-   localStorage.setItem("search_term", searchParam);
-   window.open("product.html","_self");
-}
-
-function FACEBRUSH(){
-   
-   
-   let searchParam = "bronzer";
-   localStorage.setItem("search_term", searchParam);
-   window.open("product.html","_self");
-}
+  import { login } from "./login.js";
 </script>
 
-  
+
 
 </html>

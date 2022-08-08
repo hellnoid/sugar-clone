@@ -23,13 +23,7 @@
 
       background-color: whitesmoke;
     }
-    #navlogin{
-      display: flex;
-    }
-      #changename{
-        display: flex;
-        align-items: center;
-      }
+
     #logo {
       width: 250px;
     }
@@ -1318,10 +1312,11 @@
 
   let searchBar = document.getElementById("search-bar");
   document.getElementById("search-icon").addEventListener("click", async () => {
-     let searchParam = searchBar.value;
-     localStorage.setItem("search_term", searchParam);
+    let searchParam = searchBar.value;
+    console.log(searchParam);
+    localStorage.setItem("search_term", searchParam);
 
-    init(searchParam);
+    location.href = "product.html";
   });
 
   const getData = async (url) => {
@@ -1389,16 +1384,16 @@
       container.append(card);
     });
   };
-  //let searchTerm = document.getElementById("search-bar").value;
+  let searchTerm = document.getElementById("search-bar").value;
   // localStorage.getItem("search-term"); 
   // document.getElementById("search-bar").value;
-  async function init(searchTerm) {
+  async function init() {
     // event.preventDefault();
     try {
       // location.href = "product.html";
       console.log(searchTerm);
-      let url = `http://localhost:3000/all?q=${searchTerm}`;
-
+      let url = `http://localhost:3000/all?=${searchTerm}`;
+      console.log(url);
       let data = await getData(url);
       console.log(data);
       displayData(data);
@@ -1406,8 +1401,6 @@
       console.log(error);
     }
   }
-  let s=localStorage.getItem("search_term");
-  init(s);
 
   document.querySelector("#lips").addEventListener("click", async () => {
     try {
@@ -1454,18 +1447,6 @@
     } catch (error) {}
   });
 
-  let userInfo = JSON.parse(localStorage.getItem("userDetails"));
-
-if (Object.keys(userInfo).length > 0) {
-  let changename = document.getElementById("changename");
-  changename.innerText =
-    "Hi," + userInfo.username;
-  let changebox = document.getElementById("navlogin");
-  // changebox.style.backgroundColor = "lightgrey";
-  changebox.style.height = "45px";
-  changebox.style.width = "250px";
-  changebox.style.padding = "0px";
-}
-
-  // document.getElementById("search-icon").addEventListener("click", init());
+  // init();
+  document.getElementById("search-icon").addEventListener("click", init());
 </script>

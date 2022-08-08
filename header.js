@@ -5,18 +5,13 @@ let header = () => {
       <div id="search">
            <input id="search-bar" type="text" placeholder="Try Liquid Lipstick">
      
-           <input id="search-icon" type="submit" value="Search" onclick="gotoProductPageIN()">
+           <input id="search-icon" type="submit" value="Search">
       </div>
    
       <img id="user" class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/2048px-OOjs_UI_icon_userAvatar.svg.png"> 
-    
-      <div id="signappend"></div>
-    <div id="navlogin">
-      <p>
-        <span><i class="fa-solid fa-user"></i></span>&nbsp;&nbsp;<div id="changename">Login/Register</div>
-      </p>
-    </div>
-
+     
+      <a id="login-signup" href="#" id="">Login/Register</a>
+  
 <!-----   icons --->
   <a href="#"><img id="heart" class="icon" src="https://cdn0.iconfinder.com/data/icons/glyphpack/51/heart-512.png">  </a>
  <a href="cart/cart.html"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/7446/7446956.png">  </a>
@@ -30,9 +25,9 @@ let header = () => {
        
       </button>
       <div class="dropdown-content">
-        <a id="lips" href="#" onclick="LIPS()">LIPS</a>
-        <a id="eyes" href="#" onclick="EYE()">EYES</a>
-        <a id="face" href="#" onclick="FACE()">FACE</a>
+        <a id="lips" href="#">LIPS</a>
+        <a id="eyes" href="#">EYES</a>
+        <a id="face" href="#">FACE</a>
       </div>
     </div> 
      <div class="dropdown">
@@ -40,8 +35,8 @@ let header = () => {
        
       </button>
       <div class="dropdown-content">
-        <a id="facebrush" href="#" onclick="FACEBRUSH()">FACE BRUSHES</a>
-        <a id="eyebrush" href="#" onclick="EYEBRUSH()">EYE BRUSHES</a>
+        <a id="facebrush" href="#">FACE BRUSHES</a>
+        <a id="eyebrush" href="#">EYE BRUSHES</a>
        
       </div>
     </div> 

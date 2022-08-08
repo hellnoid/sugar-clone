@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100&family=Inter:wght@200;700&family=Nunito+Sans:wght@200&family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;500&family=Quicksand:wght@300&family=Ubuntu:wght@500&display=swap");
+* {
+  font-family: Quicksand;
+}
+
+#navlogin{
+cursor: pointer;
+
+}
+
+#signappend{
+  display: none;
+  position: absolute;
+  margin-right: -50%;
+  margin-top: -25px;
+  animation: right 2s;
+  z-index: 1;
+  right: 745px;
+}
+
+@keyframes right{
+  from{
+  transform: translateX(700px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+  }
+  
+  #navlogin{
+    display: flex;
+    align-items: center;
+  }
+
+  
