@@ -49,7 +49,7 @@ This is login and register page created by Md Talib ,  on clicking login button 
 ![App Screenshot](https://snipboard.io/oiBTPv.jpg)
 
 
-![App Screenshot](https://snipboard.io/5oGEjL.jpg)
+![App Screenshot](https://snipboard.io/dsDUBx.jpg)
 
 
 This page was created by Harshini Usarthi . Truly he worked hard on this page because in this page had many additional functionality like images are slide automatic as well as on clicking arrow button . And this page had streaming section where videos are play auto on hovering .
