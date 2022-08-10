@@ -26,11 +26,6 @@ https://github.com/hellnoid/sugar-clone
 `Navbar Section : -`
 
 
-
-
-
-
-
 ![App Screenshot](https://snipboard.io/XOlaDy.jpg)
 
 This is Navbar section , Designed by Rohan khurana. He added some functionality in this navbar section like search functionality. After Clicking login button login page appear in right side of the page.
@@ -44,6 +39,23 @@ This is Navbar section , Designed by Rohan khurana. He added some functionality 
 
 
 This is login and register page created by Md Talib ,  on clicking login button login page will appear , there you should have to enter your Mobile Number . On clicking request opt button you will receive Otp enter that otp in bottom of that page. After clicking on Verify button another page will appear there you will have to fill some details of your .
+
+`Home Page :-`
+
+
+![App Screenshot](https://snipboard.io/KzXPkt.jpg)
+
+
+![App Screenshot](https://snipboard.io/oiBTPv.jpg)
+
+
+![App Screenshot](https://snipboard.io/5oGEjL.jpg)
+
+
+This page was created by Harshini Usarthi . Truly he worked hard on this page because in this page had many additional functionality like images are slide automatic as well as on clicking arrow button . And this page had streaming section where videos are play auto on hovering .
+
+
+
 
 ## Tech Stack
 
