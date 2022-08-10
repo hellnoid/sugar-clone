@@ -28,7 +28,7 @@ https://github.com/hellnoid/sugar-clone
 
 ![App Screenshot](https://snipboard.io/XOlaDy.jpg)
 
-This is Navbar section , Designed by Rohan khurana. He added some functionality in this navbar section like search functionality. After Clicking login button login page appear in right side of the page.
+This is Navbar section , Designed by Rohan khurana. He added some functionality in this navbar section like search functionality.
 
 `Login/Register Page `
 
