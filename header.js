@@ -86,8 +86,6 @@ let header = () => {
     
     <a href="">OFFERS</a>
     <a href="">STORES</a>
-  </div>`
-
-
-}
-export { header }
+  </div>`;
+};
+export { header };
