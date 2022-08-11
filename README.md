@@ -1,3 +1,12 @@
+## ** Problem statement**
+<br>
+Our Problem statement is creating a pixel-perfect clone of [Sugar Cosmatics](https://in.sugarcosmetics.com).
+Previously we did a clone of a few web pages but in this problem, we were supposed to make pages dynamic.
+
+## ** The Idea**
+<br>
+We are pursuing a Full Stack Web Development course at Masai school, In Masai school, we have given a project to clone the Sugar Cosmatics website. It was a pretty good project to work on. We are five members of the team. The task was to clone the pixel-perfect layout of the Sugar Cosmatics website. Let's look at how we designed it 
+
 # Sugar Cosmetic - clone 
 Welcome to SUGAR Cosmetics. A brand of choice for the women of today! And we're here to ensure you have a lot of fun with our makeup. We're a brand that believes in empowerment. That's why, we carefully curate products from around the globe which meet every want and need there could possibly be when it comes to your makeup and skincare regime.
 
