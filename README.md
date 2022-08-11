@@ -519,6 +519,6 @@ This payment section was created by Risab kumar. Here you can see various type o
 > • Github
 
 
-## Runner-up of Presentation. Thank you, Masai
+## Winners of Presentation. Thank you, Masai
 
 ![image](https://cdn.hashnode.com/res/hashnode/image/upload/v1660052427079/fRXpGMe2R.png)
