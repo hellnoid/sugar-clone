@@ -80,7 +80,7 @@ This is cart page created by Sahid jamal, In this page you can see all products 
 
 ## Payment Page :-
 
-![App Screenshot](![image](https://user-images.githubusercontent.com/95065465/184062222-5376a9a3-46e5-4898-af26-bff7169a5496.png))
+![App Screenshot](https://snipboard.io/siTwZ8.jpg)
 
 This payment section was created by Risab kumar. Here you can see various type of payment method .
 
