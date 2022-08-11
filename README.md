@@ -55,6 +55,34 @@ This is login and register page created by Md Talib ,  on clicking login button 
 This page was created by Harshini Usarthi . Truly he worked hard on this page because in this page had many additional functionality like images are slide automatic as well as on clicking arrow button . And this page had streaming section where videos are play auto on hovering .
 
 
+## Make-Up Page : -
+
+
+![App Screenshot](https://snipboard.io/TcV2uB.jpg)
+
+
+This page was created by Rohan khurana . This makeup page had three sub catagory like Lips , Face , Eyes . You can click any of section you will redirect to that page .
+
+
+## Brushes : -
+
+![App Screenshot](https://snipboard.io/ND1daY.jpg)
+
+
+This page was created by Risab Kumar . This page has same functionality as Makeup Page . This page also divided into two pages like Face Brushes and Eyes brushes . If you want to buy face brush related products , simply click on that you will redirect to that page .
+
+
+## Cart Page :-
+
+![App Screenshot](https://snipboard.io/rj6zLQ.jpg)
+
+This is cart page created by Sahid jamal, In this page you can see all products that you added in you bag or cart , some suggestioin ,Delivery Information and Apply "Add coupon code(sahid30)to get off" too. Here , you can see your total cart product with total price . From here you increase quantity or you can remove the products .
+
+## Payment Page :-
+
+![App Screenshot](![image](https://user-images.githubusercontent.com/95065465/184062222-5376a9a3-46e5-4898-af26-bff7169a5496.png))
+
+This payment section was created by Risab kumar. Here you can see various type of payment method .
 
 
 ## Tech Stack
