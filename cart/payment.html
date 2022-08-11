@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://1000logos.net/wp-content/uploads/2020/07/SUGAR-Cosmetics-Logo1.jpg">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">Billing address</h3>
+
+                    <div class="inputBox">
+                        <span>Full name :</span>
+                        <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="inputBox">
+                        <span>E-mail :</span>
+                        <input type="email" placeholder="example@example.com" id="email">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="room - street - locality">
+                    </div>
+                    <div class="inputBox">
+                        <span>City :</span>
+                        <input type="text" placeholder="mumbai">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State :</span>
+                            <input type="text" placeholder="india">
+                        </div>
+                        <div class="inputBox">
+                            <span>Zip code :</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">Payment</h3>
+
+                    <div class="inputBox">
+                        <span>Cards accepted :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Name on card :</span>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>Exp month :</span>
+                        <input type="text" placeholder="Month">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Exp year :</span>
+                            <input type="number" placeholder="2022">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button onclick="submitFnc()" class="submit-btn"> Proceed to checkOut</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+
+
+    function submitFnc() {
+
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+
+        if (name == "" || email == "") {
+            alert("Kindly Enter Details")
+        } else {
+
+            alert("Payment Success")
+
+
+        }
+
+        console.log("check");
+
+    }
+
+</script>
