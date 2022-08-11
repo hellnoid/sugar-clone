@@ -23,7 +23,7 @@ https://github.com/hellnoid/sugar-clone
 
 ## Sample of Our Site :-
 
-##`Navbar Section : -`
+## Navbar Section : -
 
 
 ![App Screenshot](https://snipboard.io/XOlaDy.jpg)
