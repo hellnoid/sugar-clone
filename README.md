@@ -1,9 +1,9 @@
-## ** Problem statement**
+##  Problem statement
 <br>
 Our Problem statement is creating a pixel-perfect clone of [Sugar Cosmatics](https://in.sugarcosmetics.com).
 Previously we did a clone of a few web pages but in this problem, we were supposed to make pages dynamic.
 
-## ** The Idea**
+## The Idea
 <br>
 We are pursuing a Full Stack Web Development course at Masai school, In Masai school, we have given a project to clone the Sugar Cosmatics website. It was a pretty good project to work on. We are five members of the team. The task was to clone the pixel-perfect layout of the Sugar Cosmatics website. Let's look at how we designed it 
 
