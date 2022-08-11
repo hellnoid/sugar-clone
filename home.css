@@ -6,7 +6,7 @@
 
   background-color: whitesmoke;
 }
-
+/* kidda */
 #logo {
   width: 250px;
 }
@@ -76,12 +76,11 @@
   font-family: Quicksand;
 }
 
-#navlogin{
-cursor: pointer;
-
+#navlogin {
+  cursor: pointer;
 }
 
-#signappend{
+#signappend {
   display: none;
   position: absolute;
   margin-right: -56%;
@@ -91,17 +90,16 @@ cursor: pointer;
   right: 745px;
 }
 
-@keyframes right{
-  from{
-  transform: translateX(700px);
+@keyframes right {
+  from {
+    transform: translateX(700px);
   }
-  to{
+  to {
     transform: translateX(0px);
   }
-  }
+}
 
-
-#navlogin{
+#navlogin {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -118,7 +116,7 @@ cursor: pointer;
   font-family: quicksand, sans-serif;
   font-weight: 400;
 } */
-.fa-solid{
+.fa-solid {
   margin-left: -18px;
 }
 .icon {
@@ -428,7 +426,7 @@ margin-left:30px;*/
 #search {
   min-width: 400px;
 
-  display:flex;
+  display: flex;
 }
 
 #search-bar {
