@@ -23,14 +23,14 @@ https://github.com/hellnoid/sugar-clone
 
 ## Sample of Our Site :-
 
-## Navbar Section : -
+##Navbar Section : -
 
 
 ![App Screenshot](https://snipboard.io/XOlaDy.jpg)
 
 This is Navbar section , Designed by Rohan khurana. He added some functionality in this navbar section like search functionality.
 
-`Login/Register Page `
+##Login/Register Page 
 
 ![App Screenshot](https://snipboard.io/VNxWgY.jpg)
 
@@ -40,7 +40,7 @@ This is Navbar section , Designed by Rohan khurana. He added some functionality 
 
 This is login and register page created by Md Talib ,  on clicking login button login page will appear , there you should have to enter your Mobile Number . On clicking request opt button you will receive Otp enter that otp in bottom of that page. After clicking on Verify button another page will appear there you will have to fill some details of your .
 
-`Home Page :-`
+##Home Page :-
 
 
 ![App Screenshot](https://snipboard.io/KzXPkt.jpg)
