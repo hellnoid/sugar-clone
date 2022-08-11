@@ -1,6 +1,6 @@
-import navbar from "./header.js";
+    import {header} from "./header.js";
 let nav_div = document.getElementById("nav_id");
-nav_div.innerHTML = navbar();
+nav_div.innerHTML = header();
 
 let searchBar = document.getElementById("searchParam");
 document.getElementById("search-btn").addEventListener("click", async ()=>{

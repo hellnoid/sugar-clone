@@ -1,5 +1,5 @@
-let signUpPage = ()=>{
-    return `<div id="sublogin">
+let signUpPage = () => {
+  return `<div id="sublogin">
     <div id="close"><i class="fa-solid fa-xmark"></i></div>
     <p id="headlog">Login/Sign Up</p>
   <div id="loginbox">
@@ -57,10 +57,10 @@ let signUpPage = ()=>{
    </div>
    
   </div>
-</div>`
-}
+</div>`;
+};
 
-let infopage = ()=>{
+let infopage = () => {
   return `<div class="boxtop">
   <img
     src="https://in.sugarcosmetics.com/smartphone.svg"
@@ -95,7 +95,7 @@ let infopage = ()=>{
     <input type="email" placeholder="Email Address">
 </div>
 <div id="savebtn">Save and Continue</div>
-</div>`
-}
+</div>`;
+};
 
-export {signUpPage,infopage};
+export { signUpPage, infopage };

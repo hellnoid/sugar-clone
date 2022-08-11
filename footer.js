@@ -1,5 +1,5 @@
 let footer=()=>{
-    return ` <div id="mainfooter">
+    return ` 
     <div id="footersugaricon">
         <img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png" alt="">
     </div>
@@ -41,7 +41,7 @@ let footer=()=>{
     </div>
     <hr>
     <div id="footlast"><p>Copyright © 2022 SUGAR Cosmetics. All rights reserved.</p></div>
-</div>`;
+`;
 }
 
 export {footer};
