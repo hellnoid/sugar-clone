@@ -24,7 +24,7 @@ Welcome to SUGAR Cosmetics. A brand of choice for the women of today! And we're 
 
 
 ## Project link
-> ### •[sugar-Cosmatics](https://voluble-tarsier-0c48a1.netlify.app/)
+> ### •[sugar-Cosmatics](https://stunning-lolly-ab42a8.netlify.app/)
 
 ## Git Hub Repo - 
 > ### •[sugar-Cosmatics](https://github.com/hellnoid/sugar-clone)
