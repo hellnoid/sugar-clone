@@ -1,6 +1,6 @@
 ##  Problem statement
 
-Our Problem statement is creating a pixel-perfect clone of [Sugar Cosmatics](https://in.sugarcosmetics.com).
+Our Problem statement is creating a pixel-perfect clone of [Sugar Cosmetics](https://in.sugarcosmetics.com).
 Previously we did a clone of a few web pages but in this problem, we were supposed to make pages dynamic.
 <br>
 ## The Idea
