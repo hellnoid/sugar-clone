@@ -5,7 +5,7 @@ Previously we did a clone of a few web pages but in this problem, we were suppos
 <br>
 ## The Idea
 
-We are pursuing a Full Stack Web Development course at Masai school, In Masai school, we have given a project to clone the Sugar Cosmatics website. It was a pretty good project to work on. We are five members of the team. The task was to clone the pixel-perfect layout of the Sugar Cosmatics website. Let's look at how we designed it 
+We are pursuing a Full Stack Web Development course at Masai School, At Masai School, we have been given a project to clone the Sugar Cosmetics website. It was a good project to work on. There are five members of the team. The task was to clone the pixel-perfect layout of the Sugar Cosmetics website. Let's look at how we designed it 
 <br>
 
 ## Group Members
@@ -27,14 +27,14 @@ We are pursuing a Full Stack Web Development course at Masai school, In Masai sc
 ## Git Hub Repo - 
 > ### •[sugar-Cosmatics](https://github.com/hellnoid/sugar-clone)
 
-## Sample of Our Site :-
+## Sample of Our Site:-
 
-## Navbar Section : -
+## Navbar Section: -
 
 
 ![App Screenshot](https://snipboard.io/XOlaDy.jpg)
 
-This is Navbar section , Designed by Rohan khurana. He added some functionality in this navbar section like search functionality.
+This is the Navbar section, Designed by Rohan Khurana. He added some functionality in this navbar section like search functionality.
 
 ## Login/Register Page 
 
@@ -44,9 +44,9 @@ This is Navbar section , Designed by Rohan khurana. He added some functionality 
 ![App Screenshot](https://snipboard.io/38atsZ.jpg)
 
 
-This is login and register page created by Md Talib ,  on clicking login button login page will appear , there you should have to enter your Mobile Number . On clicking request opt button you will receive Otp enter that otp in bottom of that page. After clicking on Verify button another page will appear there you will have to fill some details of your .
+This is the login and register page created by Md Talib,  on clicking the login button login page will appear, there you should enter your Mobile Number. On clicking the request opt button you will receive an Otp enter that Otp at the bottom of that page. After clicking on the Verify button another page will appear there you will have to fill in some details of your.
 
-## Home Page :-
+## Home Page:-
 
 
 ![App Screenshot](https://snipboard.io/KzXPkt.jpg)
@@ -58,16 +58,16 @@ This is login and register page created by Md Talib ,  on clicking login button 
 ![App Screenshot](https://snipboard.io/dsDUBx.jpg)
 
 
-This page was created by Harshini Usarthi . Truly he worked hard on this page because in this page had many additional functionality like images are slide automatic as well as on clicking arrow button . And this page had streaming section where videos are play auto on hovering .
+Harshini Usarthi created this page. Truly he worked hard on this page because it had many additional functionalities like images sliding automatic as well as clicking arrow button. And this page had a streaming section where videos are playing auto on hovering.
 
 
-## Make-Up Page : -
+## Make-Up Page: -
 
 
 ![App Screenshot](https://snipboard.io/TcV2uB.jpg)
 
 
-This page was created by Rohan khurana . This makeup page had three sub catagory like Lips , Face , Eyes . You can click any of section you will redirect to that page .
+Rohan khurana created this page. This makeup page had three subcategories like Lips , Face, Eyes . You can click any of sections you will redirect to that page.
 
 
 ## Brushes : -
@@ -75,20 +75,20 @@ This page was created by Rohan khurana . This makeup page had three sub catagory
 ![App Screenshot](https://snipboard.io/ND1daY.jpg)
 
 
-This page was created by Risab Kumar . This page has same functionality as Makeup Page . This page also divided into two pages like Face Brushes and Eyes brushes . If you want to buy face brush related products , simply click on that you will redirect to that page .
+Risab Kumar created this page. This page has the same functionality as the Makeup Page . This page is also divided into two pages Face Brushes and Eyes brushes. If you want to buy face brush-related products , simply click on that you will be redirected to that page.
 
 
-## Cart Page :-
+## Cart Page:-
 
 ![App Screenshot](https://snipboard.io/rj6zLQ.jpg)
 
-This is cart page created by Sahid jamal, In this page you can see all products that you added in you bag or cart , some suggestioin ,Delivery Information and Apply "Add coupon code(sahid30)to get off" too. Here , you can see your total cart product with total price . From here you increase quantity or you can remove the products .
+This is a cart page created by Sahid Jamal, On this page, you can see all the products that you added to you bag or cart, some suggestions, Delivery Information, and Apply the "Add coupon code(sahid30)to get off" too. Here, you can see your total cart product with the total price. From here you increase quantity or you can remove the products.
 
-## Payment Page :-
+## Payment Page:-
 
 ![App Screenshot](https://snipboard.io/siTwZ8.jpg)
 
-This payment section was created by Risab kumar. Here you can see various type of payment method .
+This payment section was created by Rishabh Kumar. Here you can see various types of payment methods.
 
 # Create JSON Server
 ```
